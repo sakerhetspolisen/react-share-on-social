@@ -1,0 +1,59 @@
+.socialShareBackdropFadeIn {
+  animation: simpleFade 0.5s;
+  animation-fill-mode: forwards;
+}
+
+.socialShareBackdropFadeOut {
+  animation: reverseFade 0.5s;
+  animation-fill-mode: forwards;
+}
+
+.socialSharePopupMoveIn {
+  animation: fadeInUp 0.5s;
+  animation-fill-mode: forwards;
+}
+
+.socialSharePopupMoveOut {
+  animation: reverseFadeInUp 0.5s reverse;
+  animation-fill-mode: forwards;
+}
+
+@keyframes simpleFade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes reverseFade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes reverseFadeInUp {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+}
