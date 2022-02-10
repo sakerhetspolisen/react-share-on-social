@@ -13,7 +13,7 @@ const windowOptions = {
   width: 600,
 };
 const b = (o) => (o ? "yes" : "no");
-export const windowFeatures = `scrollbars=${b(windowOptions.scrollbars)},resizable=${b(
+export const windowFeatures = `popup=yes, noopener, scrollbars=${b(windowOptions.scrollbars)},resizable=${b(
   windowOptions.resizable
 )},status=${b(windowOptions.status)},location=${b(windowOptions.location)},toolbar=${b(
   windowOptions.toolbar

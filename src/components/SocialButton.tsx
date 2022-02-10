@@ -3,14 +3,7 @@ import React, { useState } from "react";
 
 import { iconList, windowFeatures } from "../config";
 
-export default function Icon({
-  id,
-  shareData,
-  onClose,
-  onClick,
-  openInWindow,
-  noReferer,
-}: IconProps) {
+export default function Icon({ id, shareData, onClose, onClick, noReferer }: IconProps) {
   const { title, path, viewBox = "0 0 24 24", color, url } = iconList[id];
   const [hover, setHover] = useState<boolean | null>(null);
 
@@ -21,12 +14,7 @@ export default function Icon({
       encodeURIComponent(shareData.textToShare),
       encodeURIComponent(shareData.linkTitle)
     );
-    if (openInWindow) {
-      let w = window.open(uri, id, windowFeatures);
-      if (!w) window.open(uri, "_blank", `noopener${noReferer ? " noreferer" : ""}`);
-    } else {
-      window.open(uri, "_blank", `noopener${noReferer ? " noreferer" : ""}`);
-    }
+    window.open(uri, id, windowFeatures + `${noReferer ? " noreferer" : ""}`);
     onClose();
   };
 
@@ -47,7 +35,6 @@ export default function Icon({
       <div
         style={{
           borderRadius: "0.5rem",
-          width: "100%",
           height: "auto",
           background: color,
           scale: hover ? "1.03" : "none",
