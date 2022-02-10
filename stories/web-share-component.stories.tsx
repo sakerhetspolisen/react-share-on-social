@@ -1,11 +1,11 @@
 import React from "react";
 import favicon from "../assets/favicon.png";
-import ReactSocialShare from "../src/index";
+import ShareOnSocial from "../src/index";
 
 //👇 This default export determines where your story goes in the story list
 export default {
-  title: "ReactSocialShare",
-  component: ReactSocialShare,
+  title: "ShareOnSocial",
+  component: ShareOnSocial,
   argTypes: {
     children: {
       description: "The JSX element that triggers the popup on click.",
@@ -18,7 +18,7 @@ export default {
   },
 };
 
-export const Default = ReactSocialShare.bind({});
+export const Default = ShareOnSocial.bind({});
 Default.args = {
   children: <button>Share 🔗</button>,
   closeText: "Stäng",

@@ -1,4 +1,4 @@
-export interface ReactSocialShareProps {
+export interface ShareOnSocialProps {
   children: any;
   backdropColor?: string;
   closeText?: string;

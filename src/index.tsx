@@ -1,4 +1,4 @@
-import { ReactSocialShareProps } from "interfaces";
+import { ShareOnSocialProps } from "interfaces";
 import React, { cloneElement, useMemo, useState } from "react";
 import Backdrop from "./components/Backdrop";
 import { iconList } from "./config";
@@ -6,7 +6,7 @@ import Portal from "./components/Portal";
 import Popup from "./components/Popup";
 import useDisclosure from "./hooks/use-disclosure";
 
-const ReactSocialShare = ({
+const ShareOnSocial = ({
   children,
   backdropColor = "rgba(0,0,0,0.4)",
   closeText = "Close",
@@ -19,10 +19,9 @@ const ReactSocialShare = ({
   linkMetaDesc,
   linkImage,
   linkFavicon,
-  openInWindow = true,
   noReferer = false,
   onSocialClick = () => null,
-}: ReactSocialShareProps) => {
+}: ShareOnSocialProps) => {
   const { onOpen, onClose, isOpen } = useDisclosure();
   const [backdropFadeClass, setBackdropFadeClass] = useState("socialShareBackdropFadeIn");
   const [popupFadeClass, setPopupFadeClass] = useState("socialSharePopupMoveIn");
@@ -84,8 +83,7 @@ const ReactSocialShare = ({
               closeText={closeText}
               copyToClipboardText={copyToClipboardText}
               copySuccessText={copySuccessText}
-              onClick={handleOnClick}
-              openInWindow={openInWindow}
+              onClick={onSocialClick}
               noReferer={noReferer}
               fadeClass={popupFadeClass}
             />
@@ -96,4 +94,4 @@ const ReactSocialShare = ({
   );
 };
 
-export default ReactSocialShare;
+export default ShareOnSocial;
