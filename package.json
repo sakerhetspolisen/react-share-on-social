@@ -1,7 +1,7 @@
 {
   "name": "react-share-on-social",
   "author": "Karl Sellergren",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": "MIT",
   "repository": "sakerhetspolisen/react-share-on-social",
   "module": "dist/react-share-on-social.esm.js",
