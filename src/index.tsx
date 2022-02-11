@@ -17,7 +17,6 @@ const ShareOnSocial = ({
   link,
   linkTitle,
   linkMetaDesc,
-  linkImage,
   linkFavicon,
   noReferer = false,
   onSocialClick = () => null,
@@ -32,10 +31,9 @@ const ShareOnSocial = ({
       link: link || (typeof window !== "undefined" && window.location.href) || "",
       linkTitle: linkTitle || "",
       linkMetaDesc: linkMetaDesc || "",
-      linkImage: linkImage,
       linkFavicon: linkFavicon,
     }),
-    [textToShare, link, linkTitle, linkMetaDesc, linkImage, linkFavicon]
+    [textToShare, link, linkTitle, linkMetaDesc, linkFavicon]
   );
 
   const handleOnClick = async () => {

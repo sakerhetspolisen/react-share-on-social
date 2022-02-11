@@ -9,7 +9,6 @@ export interface ShareOnSocialProps {
   link: string;
   linkTitle: string;
   linkMetaDesc?: string;
-  linkImage?: string;
   linkFavicon?: string;
   openInWindow?: boolean;
   noReferer?: boolean;
@@ -21,7 +20,6 @@ export interface ShareData {
   link: string;
   linkTitle: string;
   linkMetaDesc?: string;
-  linkImage?: string;
   linkFavicon?: string;
 }
 
