@@ -17,24 +17,27 @@ export default function Header({ shareData }) {
         alignItems: "center",
       }}
     >
-      <div
-        style={{
-          width: "3.2rem",
-          height: "3.2rem",
-          borderRadius: 6,
-          flexShrink: 0,
-          flexBasis: "3.2rem",
-        }}
-      >
-        <img
-          src={shareData.linkFavicon}
-          alt={`Favicon for ${shareData.title}`}
+      {shareData.linkFavicon !== "" && (
+        <div
           style={{
-            width: "100%",
-            height: "100%",
+            width: "3.2rem",
+            height: "3.2rem",
+            borderRadius: 6,
+            flexShrink: 0,
+            overflow: "hidden",
+            flexBasis: "3.2rem",
           }}
-        />
-      </div>
+        >
+          <img
+            src={shareData.linkFavicon}
+            alt={`Favicon for ${shareData.linkTitle}`}
+            style={{
+              width: "100%",
+              height: "100%",
+            }}
+          />
+        </div>
+      )}
       <div>
         <span
           style={{
