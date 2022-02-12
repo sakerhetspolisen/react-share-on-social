@@ -17,7 +17,7 @@ const SocialButtonsContainer = {
 const SocialButtonsListStyle: CSSProperties = {
   padding: "1.25rem",
   display: "grid",
-  gridTemplateColumns: "repeat(auto-fit, minmax(60px,1fr))",
+  gridTemplateColumns: "repeat(4, minmax(60px,1fr))",
   columnGap: "0.75rem",
   rowGap: "0.6rem",
 };
