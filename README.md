@@ -1,7 +1,7 @@
 <h1 align="center">react-share-on-social</h1>
 <p align="center">:smiling_face_with_three_hearts::stuck_out_tongue_winking_eye::money_mouth_face::sunglasses::partying_face:</p>
 <p align="center"><b>Native sharing if supported, beautiful fallback if not.</b></p>
-<p align="center">A <code>~7kb</code> package for effortless social media sharing, originally forked from <a href="https://www.npmjs.com/package/react-web-share">react-web-share</a>.</p>
+<p align="center">A <code>~8kb</code> package for effortless social media sharing, originally forked from <a href="https://www.npmjs.com/package/react-web-share">react-web-share</a>.</p>
 <div align="center">
   <h3>
     <a href="https://yhn9h.csb.app/">
