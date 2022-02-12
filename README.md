@@ -45,6 +45,8 @@ yarn add react-share-on-social
 
 Passing the `linkFavicon` prop drastically improves UX for devices that use the fallback. Without `linkFavicon`, the fallback renders a grey box instead.
 
+> Note: The Web Share API only works in secure contexts (HTTPS). Read more [here](https://www.w3.org/TR/web-share/#security-and-privacy-considerations).
+
 ```js
 import React from "react";
 import ShareOnSocial from "react-share-on-social";
@@ -80,7 +82,7 @@ const Example = () => {
 
 | Property              | Type            | Default                                  | Description                                                                             |
 | --------------------- | --------------- | ---------------------------------------- | --------------------------------------------------------------------------------------- |
-| `shareTo`             | `Array<string>` | `["Facebook", "Twitter", ... , "Email"]` | A list of all social media channels that should appear in the fallback.                 |
+| `shareTo`             | `Array<string>` | `["facebook", "twitter", ... , "email"]` | A list of all social media channels that should appear in the fallback.                 |
 | `noReferer`           | `boolean`       | `false`                                  | If the social media buttons should have a `noreferrer` tag or not.                      |
 | `backdropColor`       | `string`        | `rgba(0,0,0,0.4)`                        | The background color of the backdrop.                                                   |
 | `closeText`           | `string`        | `Close`                                  | The label of the close button.                                                          |
