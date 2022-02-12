@@ -2,7 +2,7 @@
   "name": "react-share-on-social",
   "description": "Native sharing using the Web Share API if supported, a beautiful fallback if not.",
   "author": "Karl Sellergren",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "license": "MIT",
   "repository": "sakerhetspolisen/react-share-on-social",
   "module": "dist/react-share-on-social.esm.js",
