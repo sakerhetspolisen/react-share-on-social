@@ -27,7 +27,7 @@ const ShareOnSocial = ({
 
   const shareData = useMemo(
     () => ({
-      textToShare: textToShare || "test",
+      textToShare: textToShare || "",
       link: link || (typeof window !== "undefined" && window.location.href) || "",
       linkTitle: linkTitle || "",
       linkMetaDesc: linkMetaDesc || "",
