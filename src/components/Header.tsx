@@ -1,9 +1,8 @@
 import React from "react";
 
 export default function Header({ shareData }) {
-  const rootDomainFromUri = (url: string) => {
-    return url.replace(/(https|http):\/\/(www.|)/g, "").replace(/\/.*/g, "");
-  };
+  let url = new URL(shareData.link);
+  let rootDomain = url.hostname.replace("www.", "");
   return (
     <header
       style={{
@@ -41,6 +40,7 @@ export default function Header({ shareData }) {
       <div>
         <span
           style={{
+            color: "rgba(0,0,0,1)",
             fontSize: "1rem",
             fontWeight: "bold",
             overflow: "hidden",
@@ -79,7 +79,7 @@ export default function Header({ shareData }) {
             WebkitBoxOrient: "vertical",
           }}
         >
-          {rootDomainFromUri(shareData.link)}
+          {rootDomain}
         </span>
       </div>
     </header>
