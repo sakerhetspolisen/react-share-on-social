@@ -2,7 +2,7 @@ import React, { ReactPortal } from "react";
 import { useEffect } from "react";
 import { createPortal } from "react-dom";
 
-const PortalComponent: React.FC = ({ children }): ReactPortal => {
+const PortalComponent: React.FC<{children: React.ReactNode}> = ({ children }): ReactPortal => {
   const el = document.createElement("div");
 
   useEffect(() => {
