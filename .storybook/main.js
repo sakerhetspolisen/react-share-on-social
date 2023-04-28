@@ -10,4 +10,15 @@ module.exports = {
   typescript: {
     check: true, // type-check stories during Storybook build
   },
+
+  framework: {
+    name: "@storybook/react-webpack5",
+    options: {},
+  },
+  docs: {
+    autodocs: true,
+  },
+  core: {
+    disableTelemetry: true,
+  },
 };
