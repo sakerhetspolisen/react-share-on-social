@@ -37,7 +37,7 @@ const ShareOnSocial = ({
   );
 
   const handleOnClick = async () => {
-    if (window.navigator.share) {
+    if (typeof window !== "undefined" && window.navigator.share) {
       try {
         await window.navigator.share({
           url: shareData.link,
